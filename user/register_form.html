@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>用户注册</title>
+    <meta charset=utf-8>
+  </head>
+ 
+  <body>
+  	<form name="reg" method="post" action="register_db.php?register" id="">
+      <h2>用户注册界面</h2>
+      <fieldset>
+      <legend>以下为必填项目</legend>
+      <table class="">
+         <tr>
+           <td valign="top" class="w1">
+           请填写您的中文名字: 
+           </td>
+           
+           <td>
+           <input name="reg_name" type="text" id="reg_name"/>
+           <span id="" style="color:red"></span>
+           </td>
+         </tr>
+         <tr>
+           <td valign="top" class="w1">
+           性别:
+           </td>
+           <td>
+           <input name="reg_gender" type="radio" value="Male" class="gender"/>男
+           <input name="reg_gender" type="radio" value="Female" class="gender"/>女
+           </td>
+          </tr>
+          <tr>
+            <td valign="top" class="w1">
+              选择你的年级:
+            </td>
+            <td>
+               <select name="reg_grade" id="reg_grade">
+                 <option selected="selected">--选择年级--</option>
+                 <option value="freshman">大一</option>
+                 <option value="sophermore">大二</option>
+                 <option value="junior">大三</option>
+                 <option value="senior">大四</option>
+                 <option value="master">硕士</option>
+                 <option value="PhD">博士</option>
+               </select>
+             </td>
+           </tr>
+           <tr>
+              <td valign="top" class="">
+                请填写您的email: 
+              </td>
+              <td>
+                <input name="reg_email" type="text" id="email" class=""/>
+                <span id="" style="color:red"></span>@ucsd.edu
+              </td>
+           </tr>
+           <tr>
+              <td valign="top" class="w1">
+                设置密码: 
+              </td>
+              <td>
+                <input name="reg_password" type="password" id="password" class="text_input" />
+                <span id="password.info" style="color:red"></span>
+              </td>
+           </tr>
+           <tr>
+              <td valign="top" class="">
+                请再次输入密码: 
+              </td>
+              <td>
+                <input name="reg_repeat" type="password" id="reg_repeat" class="text_input" />
+                <span id="password1.info" style="color:red"></span>
+              </td>
+           </tr>
+         </table>
+         </fieldset> 
+         <div class="login_in">
+           <input id="reg_submit" class="" name="reg_submit" type="submit" value="Agree" /> with terms and conditions
+         </div>
+         <footer align="center">
+          <div>UCSD CSSA 2013</div> 
+          <div>Copyright Reserved</div> 
+         </footer>  
+  </body>
+
+</html>
