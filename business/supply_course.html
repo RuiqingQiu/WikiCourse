@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Supply a course</title>
+	</head>
+	<body>
+		<form name="reg" method="post" action="request_course_db.php?register" id="">
+		<h2>Request a Course</h2>
+		<fieldset>
+		<legend>Please fill this form</legend>
+		 <table class="">
+         <tr>
+           <td valign="top" class="w1">
+           Enter the department of the course: 
+           </td>
+           <td>
+           <input name="department" type="text" id="department"/>
+           </td>
+         </tr>
+         <tr>
+           <td valign="top" class="w1">
+           Enter the course number:
+           </td>
+           <td>
+	           <input name="course_number" type="text" id="course_number"/>
+           </td>
+          </tr>
+          <tr>
+            <td valign="top" class="w1">
+              Enter the course name: 
+            </td>
+            <td>
+            	<input name="courst_name" type="text" id="course_name"/>
+            </td>
+           </tr>
+           <tr>
+              <td valign="top" class="">
+                Enter the professor's name:
+              </td>
+              <td>
+                <input name="professor" type="text" id="professor" />
+              </td>
+           </tr>
+           <tr>
+              <td valign="top" class="w1">
+                Please enter a brief description of the course:
+              </td>
+              <td>
+                <input name="course_description" type="text" id="course_description" class="text_input" />
+              </td>
+           </tr>
+        
+         </table>
+		</fieldset>
+		
+		<input id="supply_submit" class="" name="supply_submit" type="submit" value="Agree" /> with terms and conditions
+
+	</body>
+</html>

@@ -38,7 +38,7 @@
 						
 						if($result==true)
 						{
-							echo "<script>window.location.href='../user/login_form.html'</script>";
+							echo "<script>window.location.href='../main/index.html'</script>";
 						}
 						else
 						{
