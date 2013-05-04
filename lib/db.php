@@ -2,7 +2,7 @@
 
 define('DB_HOST','localhost');
 define('DB_USER','root');
-define('DB_PASSWORD','mofashi1194');
+define('DB_PASSWORD','');
 define('DB_SCHEMA','db_wc');
 define('DB_TBL_PREFIX','');
 
