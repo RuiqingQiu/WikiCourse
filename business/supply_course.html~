@@ -4,7 +4,7 @@
 		<title>Supply a course</title>
 	</head>
 	<body>
-		<form name="reg" method="post" action="ricky.php" id="">
+		<form name="reg" method="post" action="request_course_db.php?register" id="">
 		<h2>Request a Course</h2>
 		<fieldset>
 		<legend>Please fill this form</legend>
