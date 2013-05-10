@@ -18,26 +18,28 @@
     </nav>
     
     
-    <table>
+   <table>
       <tr>     
         <td>
         <?php
         mysql_connect("localhost","root","") or die (mysql_error());
         mysql_select_db("db_wc") or die(mysql_error());
-	      $data = mysql_query("SELECT * FROM `wc_course`");
+	      $data = mysql_query("SELECT DISTINCT `department` FROM `wc_course`");
 	      if($data == FALSE)
 	      {
 	        die(mysql_error());
 	      }
 	      while($row = mysql_fetch_array($data))
 	      {
-         $value = $row["department"];
+         $departmentname = $row["department"]; //store distinct department name
+        
         ?>
-	      <a href="#"><?php echo $value; ?></a><br/>
+         <!--link to new course_name page with the parameter of the specific department name -->
+	      <a href="../business/course_name.php?departmentname=<?php echo $departmentname ?>"><?php echo $departmentname; ?></a><br/>
 	      <?php
 	      };
         ?>
-     
+	       
 
 
         </td>
