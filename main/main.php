@@ -57,9 +57,36 @@
           </table>
         </td>
      
+       
         <td>
         <div>
-        悬赏排行榜
+          <?php
+            echo "悬赏排行榜"
+          ?><br/>
+          <?php          
+            mysql_connect("localhost","root","") or die (mysql_error());
+            mysql_select_db("db_wc") or die(mysql_error());
+           
+            $data2 = mysql_query("SELECT DISTINCT `course_number` FROM `request` WHERE(SELECT COUNT(`course_number`) ccount
+                                  FROM `request` ORDER BY ccount DESC) LIMIT 10");
+           
+            if($data2 == FALSE)
+	          {
+	            die(mysql_error());
+	          }
+	          while($row2 = mysql_fetch_array($data2))
+	          {
+              $coursename2 = $row2["course_number"]; 
+              echo $coursename2;
+              ?>
+              <br/>
+              <?php
+            }
+              ?>
+
+
+            
+
         </div>
         </td>
       
